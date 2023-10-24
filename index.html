@@ -1,175 +1,84 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-<style>
-table {
-  width: 100%;
+  <style>
+table, th, td {
+  border: 1px solid black;
 }
-
-  td, th {
-  text-align: left;
-}
-  
 </style>
   
-	<h1>
-  Top YouTube Channels
-	</h1>
-  
-  <table>
-    <!--Table Caption-->
-    <caption> Data: <a href="https://en.wikipedia.org/wiki/List_of_most-subscribed_YouTube_channels#50_most-subscribed_channels" target="_blank">Wikipedia</a></caption>
+  <head>
+    <title>Exercise 1: HTML 101</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <h1>Exercise 1: HTML Structure and Tags</h1>
+    <!--
+This is an HTML comment, its a way for developers to leave messages to other people who view the code. It will not render in the browser. You can delete this once you've read it as you do not need it.
+-->
+
+    <p><em>Remember: if you get into any trouble and need help this semester, navigate to <a href="w3schools.com">w3schools.com</a> </em></p>
+
+    <hr>
+    <!--
+Note the image link below: it is relative not absolute. We'll learn more about this next week.
+-->
+    <img src="https://media.giphy.com/media/H6VPKP45Nh8cYSv1Qe/giphy-downsized-large.gif" alt="a giraffe">
+    <p>Like many other animals in the African savannah and rainforest biomes, giraffes are endangered. These are all hardy creatures, but their numbers are diminished by hunting, and their habitats are increasingly constrained by climate change.</p>
+
+    <!--
+Convert the data below into a table
+-->
+
+    <h2>IUCN "red" list of threatened species</h2>
     
-<!--Table Headings-->
-    <tr>
-      <th> Rank </th>
-      <th> Name </th>
-      <th> Brand channel </th>
-      <th> Subscribers (millions) </th>
-      <th> RaPrimary languagenk </th>
-      <th> Category </th>
-      <th> Country </th>
-    </tr>
-<!--Table Data-->
-    <tr>
-      <td> 1 </td>
-      <td> T-Series </td>
-      <td> Yes </td>
-      <td> 249 </td>
-      <td> Hindi </td>
-      <td> Music </td>
-      <td> India </td>
-    </tr>
-    <tr>
-      <td> 2 </td>
-      <td> MrBeast </td>
-      <td> No </td>
-      <td> 184 </td>
-      <td> English </td>
-      <td> Entertainment </td>
-      <td> United States </td>
-    </tr>
-    <tr>
-      <td> 3 </td>
-      <td> Cocomelon </td>
-      <td> Yes </td>
-      <td> 165 </td>
-      <td> English </td>
-      <td> Education </td>
-      <td> United States </td>
-    </tr>
-    <tr>
-      <td> 4 </td>
-      <td> Sony Entertainment Television India </td>
-      <td> yes </td>
-      <td> 162 </td>
-      <td> Hindi </td>
-      <td> Entertainment </td>
-      <td> India </td>
-    </tr>
-    <tr>
-      <td> 5 </td>
-      <td> Kids Diana Show </td>
-      <td> Yes </td>
-      <td> 113 </td>
-      <td> English </td>
-      <td> Entertainment </td>
-      <td> Ukraine-United States </td>
-    </tr>
-    <tr>
-      <td> 6 </td>
-      <td> PewDiePie </td>
-      <td> No </td>
-      <td> 111 </td>
-      <td> English </td>
-      <td> Entertainment </td>
-      <td> Sweden </td>
-    </tr>
-    <tr>
-      <td> 7 </td>
-      <td> Like Nastya </td>
-      <td> No </td>
-      <td> 107 </td>
-      <td> English </td>
-      <td> Entertainment </td>
-      <td> Russia-United States </td>
-    </tr>
-     <tr>
-      <td> 8 </td>
-      <td> Vlad and niki </td>
-      <td> No </td>
-      <td> 101 </td>
-      <td> English </td>
-      <td> Entertainment </td>
-      <td> Russia-United States </td>
-    </tr>
-    <tr>
-      <td> 9 </td>
-      <td> Zee Music Company </td>
-      <td> Yes </td>
-      <td> 99.5 </td>
-      <td> Hindi </td>
-      <td> Music </td>
-      <td> India </td>
-    </tr>
-    <tr>
-      <td> 10 </td>
-      <td> WWE </td>
-      <td> Yes </td>
-      <td> 97.1 </td>
-      <td> English </td>
-      <td> SPORTS </td>
-      <td> United States </td>
-    </tr>
-    
-  </table>
-  
-<!--Webform Question-->
-  <p>Which of these YouTube channels have you watched before?</p>
-<!--Webform Options-->
-  <form>
-    <fieldset>
-      <div>
-        <input type="radio" id="T-Series" value="T-Series">
-        <label for="T-Series">T-Series</label>
-      </div>
-      <div>
-        <input type="radio" id="MrBeast" value="MrBeast">
-        <label for="MrBeast">MrBeast</label>
-      </div>
-      <div>
-        <input type="radio" id="Cocomelon" value="Cocomelon">
-        <label for="Cocomelon">Cocomelon</label>
-      </div>
-      <div>
-        <input type="radio" id="Sony Entertainment Television India" value="Sony Entertainment Television India">
-        <label for="Sony Entertainment Television India">Sony Entertainment Television India</label>
-      </div>
-      <div>
-        <input type="radio" id="Kids Diana Show" value="Kids Diana Show">
-        <label for="Kids Diana Show">Kids Diana Show</label>
-      </div>
-      <div>
-        <input type="radio" id="PewDiePie" value="PewDiePie">
-        <label for="PewDiePie">PewDiePie</label>
-      </div>
-      <div>
-        <input type="radio" id="Like Nastya" value="Like Nastya">
-        <label for="Like Nastya">Like Nastya</label>
-      </div>
-      <div>
-        <input type="radio" id="Vlad and Niki" value="Vlad and Niki">
-        <label for="Vlad and Niki">Vlad and Niki</label>
-      </div>
-      <div>
-        <input type="radio" id="Zee Music Company" value="Zee Music Company">
-        <label for="Zee Music Company">Zee Music Company</label>
-      </div>
-      <div>
-        <input type="radio" id="WWE" value="WWE">
-        <label for="WWE">WWE</label>
-      </div>
-      <input type="submit">
-    </fieldset>
-  </form>
-  
+    <table style="width:100%">
+      
+      <tr>
+        <th>Animal</th>
+        <th>Numbers</th>
+        <th>Status</th>
+      </tr>
+      <tr> 
+        <td>African elephant</td>
+        <td>450,000</td>
+        <td>VU</td>
+      </tr>
+      <tr>
+        <td>Hippo</td>
+        <td>125,000</td>
+        <td>VU</td>
+      </tr>
+      <tr>
+        <td>Giraffe</td>
+        <td>98,445</td>
+        <td>VU</td>
+      </tr>
+      <tr>
+        <td>Lion</td>
+        <td>20,000</td>
+        <td>VU</td>
+      </tr>
+      <tr>
+        <td>Cheetah</td>
+        <td>7,500</td>
+        <td>VU</td>
+      </tr>
+      <tr>
+        <td>Black rhino</td>
+        <td>5,250</td>
+        <td>CR</td>
+      </tr>
+      <tr>
+        <td>Mountain gorilla</td>
+        <td>880</td>
+        <td>CR</td>
+      </tr>
+    </table>
+   
+    <h1>Q: How Can I Help?</h1>
+    <h2>A: Join the fight to save endangered animals!</h2>
+    <p>We need students at the University of Waterloo to help us. Sign up!</p>
+  </body>
 </html>
